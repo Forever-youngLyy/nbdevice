@@ -21,4 +21,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn deploy -Dregistry=https://maven.pkg.github.com/Forever-youngLyy -Dtoken=${{ TOKEN }}
+      run: mvn deploy -Dregistry=https://maven.pkg.github.com/Forever-youngLyy -Dtoken=${{ secrets.TOKEN }}
