@@ -62,7 +62,7 @@
 		<repository>
 			<id>github</id>
 			<name>GitHub Forever-youngLyy Apache Maven Packages</name>
-			<url>https://maven.pkg.github.com/Forever-youngLyy/nbservice</url>
+			<url>https://maven.pkg.github.com/Forever-youngLyy/nbdevice</url>
 		</repository>
 	</distributionManagement>
 
