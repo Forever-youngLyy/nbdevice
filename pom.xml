@@ -48,6 +48,22 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<!-- 引入第三方依赖 -->
+		<dependency>
+			<groupId>com.ctg.ag</groupId>
+			<artifactId>ctg-ag-sdk-core</artifactId>
+			<version>2.5.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/ctg-ag-sdk-core-2.5.0-20201019.065502-28.jar</systemPath>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ctg.ag</groupId>
+			<artifactId>ag-sdk-biz-45117.tar.gz</artifactId>
+			<version>20201110.160845-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/main/resources/lib/ag-sdk-biz-45117.tar.gz-20201110.160845-SNAPSHOT.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -58,6 +74,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<includeSystemScope>true</includeSystemScope>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
