@@ -34,6 +34,7 @@ public class IndexController {
                 file.createNewFile();
             }
             fos.write(bytes);
+            fos.flush();
         }catch (Throwable e){
             e.printStackTrace();
         }
